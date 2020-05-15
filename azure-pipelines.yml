@@ -15,7 +15,7 @@ steps:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'azuretestdev'
     subscriptionId: '4071d498-a0fe-460b-884b-ff9193aa5091'
-    action: 'Create Or Update Resource Group'
+    action: 'azurermpipeline-rg'
     location: 'Central US'
     templateLocation: 'Linked artifact'
     csmFile: 'CreateWebApp/azuredeploy.json'
