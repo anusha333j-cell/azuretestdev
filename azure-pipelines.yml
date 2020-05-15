@@ -15,10 +15,10 @@ steps:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'azuretestdev'
     subscriptionId: '4071d498-a0fe-460b-884b-ff9193aa5091'
-    action: 'azurermpipeline-rg'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'azurepipeline-RG'
     location: 'Central US'
     templateLocation: 'Linked artifact'
     csmFile: 'CreateWebApp/azuredeploy.json'
     overrideParameters: '-projectName azuretestdev -linkedTemplateUri https://github.com/anusha333j-cell/azuretestdev/blob/master/CreateWebApp/linkedStorageAccount.json'
     deploymentMode: 'Incremental'
- 
