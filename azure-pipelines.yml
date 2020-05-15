@@ -10,7 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-    
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
@@ -21,6 +20,6 @@ steps:
     location: 'Central US'
     templateLocation: 'Linked artifact'
     csmFile: 'CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName azuretestdev -linkedTemplateUri https://github.com/anusha333j-cell/azuretestdev/blob/master/CreateWebApp/linkedStorageAccount.json'
+    overrideParameters: '-projectName azuretestdev -linkedTemplateUri https://raw.githubusercontent.com/anusha333j-cell/azuretestdev/master/CreateWebApp/linkedStorageAccount.json'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
